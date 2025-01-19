@@ -1,5 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { DollarSign, Users, FileText, TrendingUp } from 'lucide-react'
+import { RecentProjects } from "@/components/dashboard/recent-projects"
+import { ActivityFeed } from "@/components/dashboard/activity-feed"
 
 const stats = [
   {
@@ -58,8 +60,7 @@ export default function DashboardPage() {
             <CardTitle>Recent Projects</CardTitle>
           </CardHeader>
           <CardContent>
-            {/* We'll implement the projects list in the next step */}
-            <div className="h-[200px] rounded-lg border border-dashed" />
+            <RecentProjects />
           </CardContent>
         </Card>
         <Card className="col-span-3">
@@ -67,8 +68,7 @@ export default function DashboardPage() {
             <CardTitle>Recent Activity</CardTitle>
           </CardHeader>
           <CardContent>
-            {/* We'll implement the activity feed in the next step */}
-            <div className="h-[200px] rounded-lg border border-dashed" />
+            <ActivityFeed />
           </CardContent>
         </Card>
       </div>
